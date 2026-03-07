@@ -1,14 +1,18 @@
 import Footer from "@/components/Footer";
-import Navbar from "@/components/NavBar";
+import Navbar from "@/components/Navbar";
 import Description from "@/sections/Description";
 import Projects from "@/sections/Projects";
+import TechStack from "@/sections/TechStack";
 
 function App() {
   return (
     <main className="bg-black text-white min-h-screen">
       <Navbar />
-      <Description />
-      <Projects />
+      <div className="max-w-5xl mx-auto px-6">
+        <Description />
+        <TechStack />
+        <Projects />
+      </div>
       <Footer />
     </main>
   );

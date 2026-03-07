@@ -5,6 +5,9 @@ export default function Navbar() {
         <h1 className="font-semibold text-lg">Shashwat</h1>
 
         <div className="flex gap-6 text-sm">
+          <a href="#tech" className="hover:text-neutral-300">
+            Tech Stack
+          </a>
           <a href="#projects" className="hover:text-neutral-300">
             Projects
           </a>

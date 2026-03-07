@@ -1,22 +1,81 @@
 import { motion } from "framer-motion";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
-export default function Description() {
+export default function Hero() {
   return (
-    <section
-      id="description"
-      className="h-screen flex items-center justify-center text-center px-6"
-    >
-      <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7 }}
-      >
-        <h1 className="text-5xl md:text-6xl font-bold">Shashwat Garg</h1>
+    <section className="min-h-screen flex items-center">
+      <div className="max-w-3xl">
+        <motion.p
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 }}
+          className="text-sm text-neutral-400 mb-4"
+        >
+          Hi, I'm
+        </motion.p>
 
-        <p className="text-neutral-400 mt-4">
-          Software Engineer • Angular • Go • Systems
-        </p>
-      </motion.div>
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+          className="text-5xl md:text-7xl font-bold leading-tight"
+        >
+          Shashwat Garg
+        </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3 }}
+          className="mt-6 text-lg text-neutral-400"
+        >
+          Software engineer building scalable systems with Angular, Go, and
+          modern web technologies.
+        </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4 }}
+          className="mt-8 flex gap-4"
+        >
+          <a
+            href="#projects"
+            className="px-5 py-3 bg-white text-black rounded-md text-sm font-medium hover:bg-neutral-200 transition"
+          >
+            View Projects
+          </a>
+
+          <a
+            href="https://github.com/YOUR_USERNAME"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-5 py-3 border border-neutral-700 rounded-md text-sm flex items-center gap-2 hover:border-neutral-500 transition"
+          >
+            <FaGithub size={16} />
+            GitHub
+          </a>
+
+          <a
+            href="https://linkedin.com/in/YOUR_PROFILE"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-5 py-3 border border-neutral-700 rounded-md text-sm flex items-center gap-2 hover:border-neutral-500 transition"
+          >
+            <FaLinkedin size={16} />
+            LinkedIn
+          </a>
+
+          <a
+            href="mailto:your@email.com"
+            className="px-5 py-3 border border-neutral-700 rounded-md text-sm flex items-center gap-2 hover:border-neutral-500 transition"
+          >
+            <MdEmail size={16} />
+            Email
+          </a>
+        </motion.div>
+      </div>
     </section>
   );
 }
