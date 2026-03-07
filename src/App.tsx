@@ -1,9 +1,17 @@
+import Footer from "@/components/Footer";
+import Navbar from "@/components/NavBar";
+import Description from "@/sections/Description";
+import Projects from "@/sections/Projects";
+
 function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-neutral-950 text-white">
-      <h1 className="text-5xl font-bold">Shashwat</h1>
-    </div>
-  )
+    <main className="bg-black text-white min-h-screen">
+      <Navbar />
+      <Description />
+      <Projects />
+      <Footer />
+    </main>
+  );
 }
 
-export default App
+export default App;
