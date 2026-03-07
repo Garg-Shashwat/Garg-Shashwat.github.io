@@ -1,8 +1,14 @@
+import { motion } from "framer-motion";
+
 import type { Project } from "@/types/project";
 
 export default function ProjectCard({ title, description, tech }: Project) {
   return (
-    <div className="border rounded-lg p-6 bg-neutral-900 text-white">
+    <motion.div
+      whileHover={{ y: -6 }}
+      transition={{ type: "spring", stiffness: 200 }}
+      className="border rounded-lg p-6 bg-neutral-900 text-white"
+    >
       <h3 className="text-xl font-semibold">{title}</h3>
       <p className="text-neutral-400 mt-2">{description}</p>
 
@@ -13,6 +19,6 @@ export default function ProjectCard({ title, description, tech }: Project) {
           </span>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }
