@@ -6,7 +6,10 @@ export default function Navbar() {
           href="#"
           className="text-lg font-semibold tracking-tight hover:text-neutral-300 transition-colors"
         >
-          Shashwat
+          <div className="flex items-center gap-3">
+            <img src="/favicon.png" alt="SG logo" className="w-8 h-8" />
+            <span className="font-semibold text-lg">Shashwat</span>
+          </div>
         </a>
 
         <div className="flex items-center gap-8 text-sm text-neutral-400">
