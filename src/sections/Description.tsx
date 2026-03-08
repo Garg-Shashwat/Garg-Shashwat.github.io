@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
+import { siteConfig } from "@/config/config";
+
 const fadeUp = {
   initial: { opacity: 0, y: 20 },
   animate: { opacity: 1, y: 0 },
@@ -58,7 +60,7 @@ export default function Hero() {
             </a>
 
             <a
-              href="https://github.com/Garg-Shashwat"
+              href={siteConfig.links.github}
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-3 border border-neutral-700 rounded-md text-sm flex items-center gap-2 hover:border-neutral-500 transition"
@@ -68,7 +70,7 @@ export default function Hero() {
             </a>
 
             <a
-              href="https://www.linkedin.com/in/g-shashwat/"
+              href={siteConfig.links.linkedin}
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-3 border border-neutral-700 rounded-md text-sm flex items-center gap-2 hover:border-neutral-500 transition"
@@ -78,7 +80,7 @@ export default function Hero() {
             </a>
 
             <a
-              href="mailto:gargshashwat007@email.com"
+              href={"mailto:" + siteConfig.links.email}
               className="px-5 py-3 border border-neutral-700 rounded-md text-sm flex items-center gap-2 hover:border-neutral-500 transition"
             >
               <MdEmail size={16} />

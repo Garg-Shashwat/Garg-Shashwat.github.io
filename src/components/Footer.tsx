@@ -1,6 +1,8 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
+import { siteConfig } from "@/config/config";
+
 export default function Footer() {
   return (
     <footer
@@ -12,7 +14,7 @@ export default function Footer() {
 
         <div className="flex items-center gap-3">
           <a
-            href="mailto:gargshashwat007@email.com"
+            href={"mailto:" + siteConfig.links.email}
             title="Email"
             className="flex items-center justify-center w-9 h-9 rounded-md border border-neutral-800 text-neutral-400 hover:text-white hover:border-neutral-600 hover:bg-neutral-900 transition"
           >
@@ -20,7 +22,7 @@ export default function Footer() {
           </a>
 
           <a
-            href="https://github.com/Garg-Shashwat"
+            href={siteConfig.links.github}
             target="_blank"
             rel="noopener noreferrer"
             title="GitHub"
@@ -30,7 +32,7 @@ export default function Footer() {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/g-shashwat/"
+            href={siteConfig.links.linkedin}
             target="_blank"
             rel="noopener noreferrer"
             title="LinkedIn"

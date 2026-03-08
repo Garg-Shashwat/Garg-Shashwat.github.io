@@ -7,7 +7,7 @@ export const projects: Project[] = [
     title: "Go User Authentication",
     description:
       "JWT-based authentication microservice supporting signup, login, token refresh and revocation.",
-    github: "https://github.com/Garg-Shashwat/Go-User-Authentication",
+    github: "Go-User-Authentication",
 
     tech: [tech.go, tech.postgres, tech.docker],
 
@@ -23,7 +23,7 @@ export const projects: Project[] = [
     title: "Express Compounds Display",
     description:
       "Full-stack chemical compound database with Express API, Angular frontend and MySQL backend.",
-    github: "https://github.com/Garg-Shashwat/Express-Compounds-Display",
+    github: "Express-Compounds-Display",
 
     tech: [tech.angular, tech.express, tech.mysql, tech.docker],
 
@@ -39,7 +39,7 @@ export const projects: Project[] = [
     title: "RL Snake Agent",
     description:
       "Reinforcement learning environment where two snake agents compete for food and survival.",
-    github: "https://github.com/Garg-Shashwat/RL-snake-agent",
+    github: "RL-snake-agent",
 
     tech: [tech.python],
 
@@ -55,7 +55,7 @@ export const projects: Project[] = [
     title: "Developer Portfolio",
     description:
       "Personal portfolio website built with React, Vite, Tailwind and Framer Motion.",
-    github: "https://github.com/Garg-Shashwat/Garg-Shashwat.github.io",
+    github: "Garg-Shashwat.github.io",
 
     tech: [tech.react, tech.typescript],
 

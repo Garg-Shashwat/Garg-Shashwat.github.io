@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 
+import { siteConfig } from "@/config/config";
 import type { Project } from "@/types/project";
 
 export default function ProjectCard({
@@ -29,7 +30,7 @@ export default function ProjectCard({
         <div className="flex gap-2">
           {github && (
             <a
-              href={github}
+              href={siteConfig.links.github + github}
               target="_blank"
               rel="noopener noreferrer"
               title="GitHub"
