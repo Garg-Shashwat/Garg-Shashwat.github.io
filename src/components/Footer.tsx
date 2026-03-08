@@ -5,32 +5,38 @@ export default function Footer() {
   return (
     <footer
       id="contact"
-      className="mt-24 py-10 border-t border-neutral-800 text-sm text-neutral-400"
+      className="mt-32 py-12 border-t border-neutral-800 text-sm text-neutral-400"
     >
-      <div className="flex flex-col md:flex-row justify-between items-center gap-4 px-4">
-        <p>© 2026 Shashwat Garg</p>
+      <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+        <p className="text-neutral-500">© 2026 Shashwat Garg</p>
 
-        <div className="flex gap-6 text-lg">
-          <a href="mailto:your@email.com" className="hover:text-white">
-            <MdEmail />
+        <div className="flex items-center gap-3">
+          <a
+            href="mailto:gargshashwat001@email.com"
+            title="Email"
+            className="flex items-center justify-center w-9 h-9 rounded-md border border-neutral-800 text-neutral-400 hover:text-white hover:border-neutral-600 hover:bg-neutral-900 transition"
+          >
+            <MdEmail className="text-base" />
           </a>
 
           <a
-            href="https://github.com/YOUR_USERNAME"
+            href="https://github.com/Garg-Shashwat"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-white"
+            title="GitHub"
+            className="flex items-center justify-center w-9 h-9 rounded-md border border-neutral-800 text-neutral-400 hover:text-white hover:border-neutral-600 hover:bg-neutral-900 transition"
           >
-            <FaGithub />
+            <FaGithub className="text-base" />
           </a>
 
           <a
-            href="https://linkedin.com/in/YOUR_PROFILE"
+            href="https://www.linkedin.com/in/g-shashwat/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-white"
+            title="LinkedIn"
+            className="flex items-center justify-center w-9 h-9 rounded-md border border-neutral-800 text-neutral-400 hover:text-white hover:border-neutral-600 hover:bg-neutral-900 transition"
           >
-            <FaLinkedin />
+            <FaLinkedin className="text-base" />
           </a>
         </div>
       </div>
