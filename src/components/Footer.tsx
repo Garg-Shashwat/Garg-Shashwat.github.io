@@ -12,7 +12,7 @@ export default function Footer() {
 
         <div className="flex items-center gap-3">
           <a
-            href="mailto:gargshashwat001@email.com"
+            href="mailto:gargshashwat007@email.com"
             title="Email"
             className="flex items-center justify-center w-9 h-9 rounded-md border border-neutral-800 text-neutral-400 hover:text-white hover:border-neutral-600 hover:bg-neutral-900 transition"
           >

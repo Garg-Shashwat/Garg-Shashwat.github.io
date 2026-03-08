@@ -78,7 +78,7 @@ export default function Hero() {
             </a>
 
             <a
-              href="mailto:gargshashwat001@email.com"
+              href="mailto:gargshashwat007@email.com"
               className="px-5 py-3 border border-neutral-700 rounded-md text-sm flex items-center gap-2 hover:border-neutral-500 transition"
             >
               <MdEmail size={16} />
