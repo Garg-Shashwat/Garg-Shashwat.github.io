@@ -6,7 +6,7 @@ export default function TechStack() {
   const techList = Object.values(tech);
 
   return (
-    <section id="tech" className="py-28 scroll-mt-24">
+    <section id="tech" className="py-28">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-3xl md:text-4xl font-semibold mb-16">Tech Stack</h2>
 
