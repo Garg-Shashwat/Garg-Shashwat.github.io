@@ -21,6 +21,14 @@ export default function Navbar() {
             Tech
           </a>
 
+          <a href="#tech" className="hover:text-white transition-colors">
+            Tech
+          </a>
+
+          <a href="#experience" className="hover:text-white transition-colors">
+            Experience
+          </a>
+
           <a href="#contact" className="hover:text-white transition-colors">
             Contact
           </a>
