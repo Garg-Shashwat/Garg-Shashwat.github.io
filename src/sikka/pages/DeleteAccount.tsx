@@ -47,8 +47,7 @@ export default function DeleteAccount() {
         account are no longer linked to them.
       </Note>
       <P>
-        Nothing else is kept. Any backups our hosting provider keeps are
-        overwritten within 7 days.
+        Nothing else is kept. Sikka doesn't keep backups of deleted accounts.
       </P>
     </>
   );

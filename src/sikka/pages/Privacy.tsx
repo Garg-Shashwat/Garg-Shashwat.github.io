@@ -71,19 +71,14 @@ export default function Privacy() {
         with it. A copy of your data is also kept on your phone so the app works
         offline; deleting your account or uninstalling the app removes it.
       </P>
-      <P>
-        If a security breach affects your data, we'll tell you and the
-        authorities as the law requires.
-      </P>
-
       <H2>How long we keep it</H2>
       <P>
         Until you delete it or delete your account. Deleting your account
         removes your account and everything you recorded straight away (see{" "}
         <A href="/sikka/delete-account/">how to delete your account</A>).
         Expenses other people recorded with you stay in their accounts, showing
-        you only as a plain name. Any backups our provider keeps are overwritten
-        within 7 days, and its security logs are kept for a short period and
+        you only as a plain name. Sikka doesn't keep backups of deleted
+        accounts. Our provider's security logs are kept for a short period and
         then deleted.
       </P>
 
