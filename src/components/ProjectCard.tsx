@@ -45,7 +45,7 @@ export default function ProjectCard({
               href={demo}
               target="_blank"
               rel="noopener noreferrer"
-              title="Live Demo"
+              title={demo.startsWith("/") ? "Open" : "Live Demo"}
               className="flex items-center justify-center w-8 h-8 rounded-md border border-neutral-800 text-neutral-400 hover:text-white hover:border-neutral-600 hover:bg-neutral-900 transition"
             >
               <FiExternalLink className="text-base" />

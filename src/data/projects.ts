@@ -4,6 +4,22 @@ import { tech } from "./tech";
 
 export const projects: Project[] = [
   {
+    title: "Sikka",
+    description:
+      "Offline-first expense and shared-money tracker for families and friends, with sync and sharing between accounts.",
+    demo: "/sikka/",
+
+    tech: [tech.react, tech.typescript, tech.postgres],
+
+    highlights: [
+      "Expo / React Native app with an offline SQLite store",
+      "Supabase backend: Postgres RLS, sync RPCs, realtime",
+      "Shared ledgers with consent-based account linking",
+      "Splits, balances and monthly reports",
+    ],
+  },
+
+  {
     title: "Go User Authentication",
     description:
       "JWT-based authentication microservice supporting signup, login, token refresh and revocation.",

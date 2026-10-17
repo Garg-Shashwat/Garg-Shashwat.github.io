@@ -4,7 +4,8 @@ export type Project = {
   title: string;
   description: string;
   tech: Tech[];
-  github: string;
+  /** Repo name under the GitHub profile; omit for a private repo. */
+  github?: string;
   demo?: string;
   highlights?: string[];
 };
