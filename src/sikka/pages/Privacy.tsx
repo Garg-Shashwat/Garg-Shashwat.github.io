@@ -5,7 +5,7 @@ import Support from "@/sikka/Support";
 export default function Privacy() {
   return (
     <>
-      <PageTitle sub="Effective 13 October 2026">Privacy policy</PageTitle>
+      <PageTitle sub="Effective 17 October 2026">Privacy policy</PageTitle>
       <Note>
         In short: Sikka stores the expenses you record so you can see them on
         your devices and share them with people you choose. There are no ads, no
@@ -31,7 +31,8 @@ export default function Privacy() {
       />
       <P>
         The people you add (for example “Mom”) are names in your own records;
-        Sikka doesn't contact them.
+        Sikka doesn't contact them, and connection requests aren't emailed.
+        Please only add details about others that you're entitled to record.
       </P>
 
       <H2>How we use it</H2>
@@ -65,9 +66,14 @@ export default function Privacy() {
       <H2>Security</H2>
       <P>
         Data is encrypted in transit (HTTPS) and at rest on our provider's
-        servers. Access is controlled on the server, so each account can read
-        only its own data and what others have shared with it. A copy of your
-        data is also kept on your phone so the app works offline.
+        servers, which may be outside India. Access is controlled on the server,
+        so each account can read only its own data and what others have shared
+        with it. A copy of your data is also kept on your phone so the app works
+        offline; deleting your account or uninstalling the app removes it.
+      </P>
+      <P>
+        If a security breach affects your data, we'll tell you and the
+        authorities as the law requires.
       </P>
 
       <H2>How long we keep it</H2>
@@ -76,8 +82,9 @@ export default function Privacy() {
         removes your account and everything you recorded straight away (see{" "}
         <A href="/sikka/delete-account/">how to delete your account</A>).
         Expenses other people recorded with you stay in their accounts, showing
-        you only as a plain name. Provider security logs are kept for a short
-        period and then deleted.
+        you only as a plain name. Any backups our provider keeps are overwritten
+        within 7 days, and its security logs are kept for a short period and
+        then deleted.
       </P>
 
       <H2>Your choices and rights</H2>
@@ -93,13 +100,20 @@ export default function Privacy() {
       />
       <P>
         If you are in India, you have rights under the Digital Personal Data
-        Protection Act, 2023; contact us at the address above for any grievance.
+        Protection Act, 2023: to get a summary of your data, to have it
+        corrected or erased, to withdraw consent (by deleting your account), to
+        nominate someone to act for you, and to have grievances addressed. Our
+        grievance officer is {sikka.developer}, at{" "}
+        <Support subject="Sikka grievance" />. If you're not satisfied with our
+        answer, you can complain to the Data Protection Board of India.
       </P>
 
       <H2>Children</H2>
       <P>
-        Sikka is not meant for children under 18, and we don't knowingly collect
-        their data.
+        Sikka is not meant for children under 18: you confirm you're 18 or older
+        when you create an account, and we don't knowingly collect children's
+        data. If you believe a child has an account, tell us and we'll delete
+        it.
       </P>
 
       <H2>Changes</H2>

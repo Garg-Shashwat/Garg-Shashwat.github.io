@@ -3,6 +3,8 @@ export const sikka = {
   /** Support contact shown on these pages. Empty until it's decided. */
   supportEmail: "",
   developer: "Shashwat Garg",
+  /** City whose courts handle disputes under the terms. Empty: "the courts of India". */
+  jurisdictionCity: "",
   pages: [
     { id: "overview", label: "Overview", href: "/sikka/" },
     { id: "changelog", label: "What's new", href: "/sikka/changelog/" },

@@ -17,6 +17,7 @@ export const releases: Release[] = [
     added: [
       "A group's monthly report shows what the group spent on each category.",
       "Settings → About links to What's new and the Terms of use.",
+      "Creating an account shows the Terms of use and Privacy policy you agree to.",
     ],
     fixed: [
       "Creating an account offers Google's “Suggest strong password” again.",

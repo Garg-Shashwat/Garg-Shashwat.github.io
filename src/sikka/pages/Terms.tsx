@@ -24,7 +24,7 @@ export default function Terms() {
       <List
         items={[
           "You must be at least 18 years old.",
-          "Sign-up may be limited to invited email addresses, and we may decide who can use the app.",
+          "Sign-up may be limited to invited email addresses, and we can choose who uses the app.",
           "One account per person. Keep your password private; you're responsible for what happens in your account.",
         ]}
       />
@@ -37,6 +37,13 @@ export default function Terms() {
           "Sikka is not financial, tax or legal advice.",
         ]}
       />
+
+      <H2>Information about other people</H2>
+      <P>
+        The people you add (names, phone numbers) and the email addresses you
+        send connection requests to are about other people. Only record what
+        you're entitled to, keep it accurate, and remove it if they ask you to.
+      </P>
 
       <H2>Sharing with others</H2>
       <P>
@@ -52,6 +59,12 @@ export default function Terms() {
         yours. You let us store and process it only to run Sikka for you and the
         people you share it with. Don't upload anything you don't have the right
         to share, or anything unlawful.
+      </P>
+
+      <H2>The app</H2>
+      <P>
+        The app, its design and its code belong to us. We give you a personal,
+        non-transferable right to use it for yourself, under these terms.
       </P>
 
       <H2>Things you must not do</H2>
@@ -88,11 +101,31 @@ export default function Terms() {
       </P>
 
       <H2>Law</H2>
-      <P>These terms are governed by the laws of India.</P>
-
-      <H2>Contact</H2>
       <P>
-        Questions about these terms: <Support subject="Sikka terms" />.
+        These terms are governed by the laws of India, and disputes are handled
+        by{" "}
+        {sikka.jurisdictionCity
+          ? `the courts at ${sikka.jurisdictionCity}`
+          : "the courts of India"}
+        .
+      </P>
+
+      <H2>General</H2>
+      <List
+        items={[
+          "These terms and the privacy policy are the whole agreement between you and us about Sikka.",
+          "If a part of these terms can't be enforced, the rest still applies.",
+          "If we don't enforce a term straight away, we can still enforce it later.",
+          "You can't transfer your account or these terms to someone else.",
+        ]}
+      />
+
+      <H2>Contact and grievances</H2>
+      <P>
+        Questions or complaints about Sikka or these terms go to our grievance
+        officer, {sikka.developer}, at <Support subject="Sikka grievance" />.
+        We'll acknowledge a complaint within 24 hours and aim to resolve it
+        within 15 days.
       </P>
     </>
   );
