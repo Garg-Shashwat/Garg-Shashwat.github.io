@@ -1,6 +1,5 @@
 import { sikka } from "@/sikka/config";
 import { A, H2, List, Note, P, PageTitle } from "@/sikka/Prose";
-import Support from "@/sikka/Support";
 
 export default function Privacy() {
   return (
@@ -13,10 +12,7 @@ export default function Privacy() {
       </Note>
 
       <H2>Who we are</H2>
-      <P>
-        Sikka is an expense tracking app made by {sikka.developer} (“we”).
-        Questions or requests: <Support />.
-      </P>
+      <P>Sikka is an expense tracking app made by {sikka.developer} (“we”).</P>
 
       <H2>What we collect</H2>
       <List
@@ -87,35 +83,23 @@ export default function Privacy() {
         items={[
           "See and correct your data in the app at any time.",
           "Delete individual records, disconnect from people, or delete your whole account in the app.",
-          <>
-            Ask us about your data, or for a copy of it, at{" "}
-            <Support subject="My Sikka data" />.
-          </>,
         ]}
       />
       <P>
         If you are in India, you have rights under the Digital Personal Data
-        Protection Act, 2023: to get a summary of your data, to have it
-        corrected or erased, to withdraw consent (by deleting your account), to
-        nominate someone to act for you, and to have grievances addressed. Our
-        grievance officer is {sikka.developer}, at{" "}
-        <Support subject="Sikka grievance" />. If you're not satisfied with our
-        answer, you can complain to the Data Protection Board of India.
+        Protection Act, 2023. You can correct or erase your data in the app, and
+        withdraw consent by deleting your account.
       </P>
 
       <H2>Children</H2>
       <P>
         Sikka is not meant for children under 18: you confirm you're 18 or older
         when you create an account, and we don't knowingly collect children's
-        data. If you believe a child has an account, tell us and we'll delete
-        it.
+        data.
       </P>
 
       <H2>Changes</H2>
-      <P>
-        If this policy changes, we'll update the date above, and tell you in the
-        app if the change is significant.
-      </P>
+      <P>If this policy changes, we'll update the date above.</P>
     </>
   );
 }

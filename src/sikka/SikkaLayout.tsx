@@ -2,8 +2,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import { type ReactNode, useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 
-import Footer from "@/components/Footer";
 import { sikka, type SikkaPage } from "@/sikka/config";
+import SikkaFooter from "@/sikka/SikkaFooter";
 
 /** Shell for the Sikka pages: the site's navbar style with Sikka's own links, then the page. */
 export default function SikkaLayout({
@@ -78,7 +78,7 @@ export default function SikkaLayout({
 
       <article className="max-w-3xl mx-auto px-6 pt-32">{children}</article>
 
-      <Footer />
+      <SikkaFooter />
     </main>
   );
 }

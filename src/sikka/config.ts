@@ -1,8 +1,11 @@
 /** Sikka: an expense and shared-money tracking app (Android). Public pages live under /sikka/. */
 export const sikka = {
-  /** Support contact shown on these pages. Empty until it's decided. */
-  supportEmail: "",
   developer: "Shashwat Garg",
+  /** Footer links. Own copy rather than siteConfig, so the site's contact email isn't bundled into these pages. */
+  links: {
+    github: "https://github.com/Garg-Shashwat/",
+    linkedin: "https://www.linkedin.com/in/g-shashwat/",
+  },
   /** City whose courts handle disputes under the terms. Empty: "the courts of India". */
   jurisdictionCity: "",
   pages: [

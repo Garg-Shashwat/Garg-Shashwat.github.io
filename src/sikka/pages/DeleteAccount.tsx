@@ -1,6 +1,5 @@
 import { sikka } from "@/sikka/config";
 import { H2, List, Note, P, PageTitle } from "@/sikka/Prose";
-import Support from "@/sikka/Support";
 
 export default function DeleteAccount() {
   return (
@@ -21,13 +20,6 @@ export default function DeleteAccount() {
         ]}
       />
       <P>Your account is deleted immediately.</P>
-
-      <H2>Can't use the app?</H2>
-      <P>
-        Email <Support subject="Delete my Sikka account" /> from the email
-        address you use for Sikka, with the subject “Delete my Sikka account”.
-        We'll delete the account within 30 days and reply to confirm.
-      </P>
 
       <H2>What is deleted</H2>
       <List

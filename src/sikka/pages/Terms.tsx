@@ -1,6 +1,5 @@
 import { sikka } from "@/sikka/config";
 import { A, H2, List, Note, P, PageTitle } from "@/sikka/Prose";
-import Support from "@/sikka/Support";
 
 export default function Terms() {
   return (
@@ -80,9 +79,9 @@ export default function Terms() {
       <P>
         Sikka is free and provided “as is”. We try to keep it working and your
         data safe, but we can't promise it will always be available or free of
-        errors. We may change, pause or stop the app or these terms; if a change
-        is significant we'll tell you in the app, and you can always delete your
-        account.
+        errors. We may change, pause or stop the app or these terms; the date
+        above shows when these terms last changed, and you can always delete
+        your account.
       </P>
 
       <H2>Ending your use</H2>
@@ -119,14 +118,6 @@ export default function Terms() {
           "You can't transfer your account or these terms to someone else.",
         ]}
       />
-
-      <H2>Contact and grievances</H2>
-      <P>
-        Questions or complaints about Sikka or these terms go to our grievance
-        officer, {sikka.developer}, at <Support subject="Sikka grievance" />.
-        We'll acknowledge a complaint within 24 hours and aim to resolve it
-        within 15 days.
-      </P>
     </>
   );
 }
