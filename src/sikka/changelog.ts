@@ -12,7 +12,7 @@ export type Release = {
 export const releases: Release[] = [
   {
     version: "1.1.1",
-    date: "October 2026",
+    date: "17 October 2026",
     title: "Group spending by category",
     added: [
       "A group's monthly report shows what the group spent on each category.",
