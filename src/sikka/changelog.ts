@@ -19,9 +19,6 @@ export const releases: Release[] = [
       "Settings → About links to What's new and the Terms of use.",
       "Creating an account shows the Terms of use and Privacy policy you agree to.",
     ],
-    fixed: [
-      "Creating an account offers Google's “Suggest strong password” again.",
-    ],
   },
   {
     version: "1.1.0",
